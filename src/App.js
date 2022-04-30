@@ -37,6 +37,7 @@ const Home = React.forwardRef((props, ref) => {
         <AboutMe
           heading={about.heading}
           message={about.message}
+          message2 = {about.message2}
           link={about.imageLink}
           imgSize={about.imageSize}
           resume={about.resume}
@@ -67,7 +68,10 @@ const Home = React.forwardRef((props, ref) => {
         <Skills
           heading={skills.heading}
           hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
+          cloudSkills={skills.cloudSkills}
+          visSkills={skills.visSkills}
+          environmentSkills={skills.environmentSkills}
+          competencies={skills.competencies}
         />
       )}
       

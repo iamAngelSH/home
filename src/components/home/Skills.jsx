@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import { Jumbotron, Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 
-function Skills({ heading, hardSkills, softSkills }) {
+function Skills({ heading, hardSkills, cloudSkills, visSkills, environmentSkills,competencies  }) {
   const skillsTabRef = React.useRef();
   const [isScrolled, setIsScrolled] = React.useState(false);
   //const navbarDimensions = useResizeObserver(navbarMenuRef);
@@ -40,13 +40,41 @@ function Skills({ heading, hardSkills, softSkills }) {
           </Tab>
           <Tab
             tabClassName="skills-tab lead"
-            eventKey="soft-skills"
-            title="Soft Skills"
+            eventKey="cloud-skills"
+            title="Cloud"
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={softSkills} isScrolled={isScrolled} />
+              <SkillsTab skills={cloudSkills} isScrolled={isScrolled} />
             </Row>
           </Tab>
+          <Tab
+            tabClassName="skills-tab lead"
+            eventKey="vis-skills"
+            title="Visualization"
+          >
+            <Row className="pt-3 px-1">
+              <SkillsTab skills={visSkills} isScrolled={isScrolled} />
+            </Row>
+          </Tab>
+          <Tab
+            tabClassName="skills-tab lead"
+            eventKey="envir-skills"
+            title="Environments"
+          >
+            <Row className="pt-3 px-1">
+              <SkillsTab skills={environmentSkills} isScrolled={isScrolled} />
+            </Row>
+          </Tab> 
+          <Tab
+            tabClassName="skills-tab lead"
+            eventKey="comp-skills"
+            title="Competencies"
+          >
+            <Row className="pt-3 px-1">
+              <SkillsTab skills={competencies} isScrolled={isScrolled} />
+            </Row>
+          </Tab>
+          
         </Tabs>
       </Container>
     </Jumbotron>
