@@ -45,7 +45,8 @@ const Home = React.forwardRef((props, ref) => {
       )}
       {
         experiences.show && (
-          <Experience experiences={experiences}/>
+          <Experience 
+          experiences={experiences}/>
         )
       }
       {repos.show && (
@@ -94,6 +95,10 @@ const App = () => {
             heading={getInTouch.heading}
             message={getInTouch.message}
             email={getInTouch.email}
+            message3={getInTouch.message3}
+            linkedInUser={getInTouch.linkedInUser}
+            message2={getInTouch.message2}
+            twitterUser={getInTouch.twitterUser}
           />
         )}
       </Footer>

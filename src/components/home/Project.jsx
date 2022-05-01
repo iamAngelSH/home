@@ -58,6 +58,10 @@ const Project = ({ heading, username, length, specfic }) => {
     <Jumbotron fluid id="projects" className="bg-light m-0">
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
+        <p className="lead text-center">
+          Below you can see some of the most recent projects I have worked on. Feel free to clone the repository
+           and play around with it, or go to the repo and see the work :)
+          </p>
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (

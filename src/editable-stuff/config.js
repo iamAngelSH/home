@@ -10,7 +10,7 @@ const mainBody = {
   middleName: "",
   lastName: "Santana Hernandez",
   userName: "iamAngelSH",
-  message: " Data Science | Machine learning  ",
+  message: " Data Science | Machine Learning | Data Engineer  ",
   icons: [
     {
       image: "fa-github",
@@ -148,17 +148,29 @@ const getInTouch = {
   message:
     "I'm currently looking for full-time Data Science, Machine Learning, or Data Engineering opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
   email: "angelash303@gmail.com",
+  message2: "You can also reach me at twitter",
+  twitterUser: "iamAngelSH",
+  message3: "Or on LinkedIn",
+  linkedInUser: "Angel Santana Hernandez"
 };
 
 // ANGEL --- REVIEW AND FIX THIS
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
+  message: "My experiences include Data Science, Machine Learning, and Data Engineering.",
+  message2: "I also have experience in entrepreneuriship and community management.",
+  comingSoon: "Experience cards COMING SOON.",
   data: [
     {
       role: 'Software Engineer',// Here Add Company Name
       companylogo: require('../assets/img/dell.png'),
       date: 'June 2018 – Present',
+    },
+    {
+      role: 'Front-End Developer',
+      companylogo: require('../assets/img/boeing.png'),
+      date: 'May 2017 – May 2018',
     },
     {
       role: 'Front-End Developer',
