@@ -26,6 +26,7 @@ const ProjectCard = ({ value }) => {
           ) : (
             <Skeleton count={3} />
           )}
+          <hr></hr>
           {value ? (
             <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
           ) : (
@@ -40,14 +41,17 @@ const ProjectCard = ({ value }) => {
 const CardButtons = ({ svn_url }) => {
   return (
     <>
-      <a
+      {/* <a
         href={`${svn_url}/archive/master.zip`}
         className="btn btn-outline-secondary mr-3"
       >
         <i className="fab fa-github" /> Clone Project
-      </a>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary">
+      </a> */}
+      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mr-3">
         <i className="fab fa-github" /> Repo
+      </a>
+      <a href={`${svn_url}/#readme`} target=" _blank" className="btn btn-outline-secondary mr-3">
+        <i className="fab fa-github" /> Read Me
       </a>
     </>
   );

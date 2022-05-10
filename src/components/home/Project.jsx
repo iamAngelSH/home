@@ -59,8 +59,8 @@ const Project = ({ heading, username, length, specfic }) => {
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <p className="lead text-center">
-          Below you can see some of the most recent projects I have worked on. Feel free to clone the repository
-           and play around with it, or go to the repo and see the work :)
+          Below you can see some of the most recent projects I have worked on. Feel free to look at the README to know more about the project and visit the repository
+           to see the awesome work :)
           </p>
         <Row>
           {projectsArray.length
