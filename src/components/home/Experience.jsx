@@ -14,17 +14,17 @@ const Experience = ({experiences}) => {
                     <h2  className="display-4 mb-5 text-center">
                         {experiences.heading}
                     </h2>
-                    <p className="lead text-center"> {experiences.message}</p>
-                    <p className="lead text-center">{experiences.message2}
+                    <p className="lead text-center"> {experiences.message}
+
                     <br></br>
                     <br></br>
                         <a
                                 className="btn btn-outline-dark btn-l"
-                                href="#projects"
+                                href="https://angelsantana.io/static/media/resume.232c63ab.pdf"
                                 role="button"
-                                aria-label="Projects"
+                                aria-label="Resume"
                             >
-                            Projects
+                            Resume
                         </a>
                         &nbsp;
                         <a
@@ -36,14 +36,14 @@ const Experience = ({experiences}) => {
                             Skills
                         </a>
                     </p>
-                    <p className="lead text-center"> <u>{experiences.comingSoon}</u></p>
-                    {/* <Row>
+                    {/* <p className="lead text-center"> <u>{experiences.comingSoon}</u></p> */}
+                    <Row>
                         {
                             experiences.data.map(data => {
                                 return <ExperienceCard key={data.company} data={data} />
                             })
                         }
-                    </Row> */}
+                    </Row>
                 </Jumbotron>
             </Container>
         </section>

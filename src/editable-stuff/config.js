@@ -10,20 +10,20 @@ const mainBody = {
   middleName: "",
   lastName: "Santana Hernandez",
   userName: "iamAngelSH",
-  message: " Data Science | Machine Learning | Data Engineer  ",
+  message: " Content Creator ~ Data Science, Data Engineering, Machine Learning  ",
   icons: [
+    {
+      image: "fa-youtube",
+      url: "https://www.youtube.com/channel/UC_wflkTmHOsQ0gTrDhOs7bQ?sub_confirmation=1",
+    },
+    {
+      image: "fa-twitch",
+      url: "https://www.twitch.tv/iamangelsh",
+    },
     {
       image: "fa-github",
       url: "https://github.com/iamAngelSH",
     },
-    // {
-    //   image: "fa-facebook",
-    //   url: "https://www.facebook.com/hashirshoaeb",
-    // },
-    // {
-    //   image: "fa-instagram",
-    //   url: "https://www.instagram.com/hashirshoaeb/",
-    // },
     {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/angelsantanahernandez/",
@@ -51,15 +51,44 @@ const mainBody = {
 
 const about = {
   show: true,
-  heading: "About Me",
+  heading: "Computer Scientist ~ The Engineer",
   // imageLink: require("../editable-stuff/angel_faceshot.jpg"),
   imageLink: "",
   imageSize: 375,
   message:
-    "My name is Angel Santana Hernandez. I am a 2021 graduate from University of Colorado (Leed's School of Business) with a Master of Science in Business Analytics with a focus on Big Data and Security Analytics. I am also a graduate from University of Colorado (College of Engineering and Applied Science) with a Bachelors in Computer Science with a concentration in entrepreneurship.",
+    "Angel is a data enthusiast in Data Engineering/Data Science with a passion in developing in Python. He started his journey in software engineering where he co-founded and worked in a started up that streamlined productivity tools for patent lawyers. Tech can be overwhelming for many as I experienced it first hand as a first generation college graduate and entering the industry. As a minority working in tech, Angel see's a gap to help people ease into the advantages that has to offer. He brings value, trust, and credibility to his audience by maintaining authenticity and realness through his life's journey. He hopes that sharing projects, resources, day to day experiences, and much more will help build a community where other's can seek guidance. Let's have fun, be real, learn, grow, and most importantly, enjoy life day by day.",
   message2: "I am passionate about giving back to the community, learning in public, helping others achieve their goals in Data Science/Machine Learning. In my free time I like to work on projects and enjoy life.",
   resume: require("../editable-stuff/resume.pdf"),
 };
+
+
+
+// CONTENT SECTIONS
+const content = {
+  show: true,
+  heading: "Content Creator",
+  icons: [
+    {
+      image: "fa-youtube",
+      url: "https://www.youtube.com/channel/UC_wflkTmHOsQ0gTrDhOs7bQ?sub_confirmation=1",
+    },
+    {
+      image: "fa-twitch",
+      url: "https://www.twitch.tv/iamangelsh",
+    },
+    {
+      image: "fa-github",
+      url: "https://github.com/iamAngelSH",
+    }
+  ],
+  message: "Weekly Youtube Videos, Twitch Streams, and Project Tutorials on Github.",
+  comingSoon: "Blog coming soon.",
+  yt_text: 'Projects, Tech, Career, Life!',
+
+
+
+
+}
 
 // PROJECTS SECTION
 // Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
@@ -68,10 +97,10 @@ const about = {
 //      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Recent Projects",
+  heading: "Github Projects",
   gitHubUsername: "iamAngelSH", //i.e."johnDoe12Gh"
   reposLength: 0,
-  specificRepos: ["Used_Car_Project","Data-Science-Portfolio", "streamlit_stockPrice", "flask-docker-hello-world"],
+  specificRepos: ["AngelInTech","phishing_url", "Data-Science-Portfolio", "DataBases"],
 };
 
 // Leadership SECTION
@@ -163,19 +192,19 @@ const experiences = {
   comingSoon: "Experience cards COMING SOON.",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'Data Scientist Intern',// Here Add Company Name
+      companylogo: require('../assets/img/t5c.png'),
+      date: 'Jan 2022 – Apr 2022',
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'CTO ~ Data Consultant',
+      companylogo: require('../assets/img/rds.png'),
+      date: 'Apr 2021 – Aug 2021',
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Co-Founder ~ CXO ~ Software Engineer Lead',
+      companylogo: require('../assets/img/pds.png'),
+      date: 'Sept 2017 – Oct 2021',
     },
   ]
 }
@@ -186,4 +215,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences};
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, content};

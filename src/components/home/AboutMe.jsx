@@ -51,8 +51,9 @@ const AboutMe = ({ heading, message, message2, link, imgSize, resume }) => {
             <h2 className="display-4 mb-5 text-center">{heading}</h2>
             <p className="lead text-center">{message}</p>
             {/* Add another message here */}
-            <p className="lead text-center">{message2}</p>
-            {resume && (
+            {/* <p className="lead text-center">{message2}</p> */}
+            {/* Can Add something! */}
+            {/* {resume && (
               <p className="lead text-center">
                 <a
                   className="btn btn-outline-dark btn-lg"
@@ -62,10 +63,10 @@ const AboutMe = ({ heading, message, message2, link, imgSize, resume }) => {
                   role="button"
                   aria-label="Resume/CV"
                 >
-                  Resume
+                  
                 </a>
               </p>
-            )}
+            )} */}
           </div>
         </div>
       </div>

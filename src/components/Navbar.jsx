@@ -63,17 +63,17 @@ const Navigation = React.forwardRef((props, ref) => {
               className="nav-link lead"
               href={process.env.PUBLIC_URL + "/#experience"}
             >
-              Experience
+              Work Exp.
             </Nav.Link>
           )}
-          <Nav.Link
+          {/* <Nav.Link
             className="nav-link lead"
             href={about.resume}
             target="_blank"
             rel="noreferrer noopener"
           >
             Resume
-          </Nav.Link>
+          </Nav.Link> */}
           {getInTouch.show && (
             <Nav.Link
               className="nav-link lead"
